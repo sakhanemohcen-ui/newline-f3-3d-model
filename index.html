@@ -65,14 +65,13 @@
   #stick{position:fixed;left:22px;bottom:118px;width:112px;height:112px;border-radius:50%;background:rgba(24,22,20,.35);border:2px solid rgba(255,255,255,.4);display:none;touch-action:none}
   #stick i{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:rgba(243,236,225,.88);pointer-events:none}
   body.touch #hint{display:none}
-  body.touch #tod{bottom:78px}            /* sits above the host badge in the bottom-right corner */
-  body.touch #stick{bottom:160px}
+  body.touch #tod{bottom:14px}
   @media (max-width:760px){
     #bar{top:8px;left:8px;right:8px;gap:6px}
     #title{font-size:12px;padding:6px 10px} #title b{font-size:13px}
     #styles button{padding:7px 9px;font-size:12px}
     #actions{gap:6px} #actions button{padding:8px 10px;font-size:12px}
-    #tod{width:calc(100vw - 44px);padding:6px 12px 5px;bottom:78px}
+    #tod{width:calc(100vw - 44px);padding:6px 12px 5px;bottom:14px}
     #hint{display:none}
     #card{left:12px;right:12px;max-width:none;bottom:auto;top:168px;padding:10px 14px 11px}
     #card h2{font-size:18px}
@@ -81,8 +80,7 @@
   @media (max-height:480px){
     #title{display:none}
     #card{top:auto;bottom:86px;left:150px;right:auto;max-width:300px}
-    #stick,body.touch #stick{bottom:84px;width:92px;height:92px}
-    #tod,body.touch #tod{bottom:10px;left:16px;transform:none;width:min(420px,calc(100vw - 270px))}
+    #stick{bottom:84px;width:92px;height:92px}
     #start .panel{padding:16px 22px 14px} #start h1{font-size:22px;margin:4px 0} #start .price{margin:8px 0 2px;font-size:19px} #start .facts{margin-bottom:10px} #start .how{display:none}
   }
   #err{position:fixed;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:30px;font-size:15px;line-height:1.5;
